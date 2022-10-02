@@ -1,6 +1,3 @@
-/* Raleway – 700,
-а для Roboto – 400,
-500, 700 і 900.  */
 :root {
   --primary-text-color: #212121;
   --main-blue-color: #2196f3;
@@ -15,6 +12,11 @@
 body {
   font-family: roboto, sans-serif;
   letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.button {
+  cursor: pointer;
 }
 
 ul {
@@ -91,7 +93,6 @@ a {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--primary-text-color);
 }
 
 .features p {
@@ -107,7 +108,6 @@ a {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  color: var(--primary-text-color);
 }
 
 .our-team h3 {
@@ -115,7 +115,6 @@ a {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  color: var(--primary-text-color);
 }
 
 .our-team p {
@@ -147,7 +146,6 @@ a {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--primary-text-color);
 }
 
 .projects p {
@@ -182,4 +180,11 @@ a {
 
 .footer span {
   color: var(--main-white-color);
+}
+
+.address-footer:hover,
+.address-footer:focus,
+.address-contacts:hover,
+.address-contacts:focus {
+  color: var(--main-blue-color);
 }
