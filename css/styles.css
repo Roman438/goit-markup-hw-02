@@ -7,6 +7,7 @@
   --footer-address-color: rgba(255, 255, 255, 0.6);
   --background-black: #2f303a;
   --background-portfolio-nav: #f5f4fa;
+  --background-button: #188ce8;
 }
 
 body {
@@ -16,7 +17,21 @@ body {
 }
 
 .button {
+  font-family: roboto, sans-serif;
   cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 ul {
@@ -28,6 +43,10 @@ a {
 }
 
 /* ------------------header---------------- */
+
+.header {
+  background-color: var(--main-white-color);
+}
 
 .logo {
   color: var(--main-blue-color);
@@ -42,14 +61,15 @@ a {
 }
 
 .header-nav {
-  color: var(--primary-text-color);
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   text-align: center;
+  color: var(--primary-text-color);
 }
 
-.tel {
+.tel-mail {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
@@ -66,6 +86,10 @@ a {
 
 /* ----------first page------------------- */
 
+.hero {
+  background-color: var(--background-black);
+}
+
 .hero h1 {
   font-weight: 900;
   font-size: 44px;
@@ -74,7 +98,6 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-white-color);
-  background-color: var(--background-black);
 }
 
 .hero button {
@@ -85,6 +108,18 @@ a {
   letter-spacing: 0.06em;
   color: var(--main-white-color);
   background-color: var(--main-blue-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.hero button:hover,
+.hero button:focus {
+  background-color: var(--background-button);
+}
+
+.features,
+.our-works {
+  background-color: var(--main-white-color);
 }
 
 .features h3 {
@@ -108,6 +143,14 @@ a {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+}
+
+.our-team {
+  background-color: var(--background-portfolio-nav);
+}
+
+.our-team li {
+  background-color: var(--main-white-color);
 }
 
 .our-team h3 {
@@ -141,14 +184,18 @@ a {
   background-color: var(--main-blue-color);
 }
 
-.projects h2 {
+.portfolio {
+  background-color: var(--main-white-color);
+}
+
+.portfolio h2 {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
-.projects p {
+.portfolio p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
